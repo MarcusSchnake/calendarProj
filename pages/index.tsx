@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/componet/styles/Home.module.css";
 import React from "react";
 import { Navbar } from "./navbar";
-import 'react-big-calendar/lib/sass/styles';
+require('react-big-calendar/lib/css/react-big-calendar.css');
+import { MyCalendar } from "../componets/calendar";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         <Navbar/>
         <h1 className={styles.title}>Scheduler for small business</h1>
+        <MyCalendar/> 
       </main>
     </>
   );
