@@ -1,10 +1,11 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import styles from "@/componet/styles/Home.module.css";
 import React from "react";
-import { Navbar } from "./navbar";
+import { Navbar } from "../componets/navbar";
 require('react-big-calendar/lib/css/react-big-calendar.css');
 import { MyCalendar } from "../componets/calendar";
+import { AboutUs } from "../componets/about";
+import { AppScheduler } from "../componets/app_scheduler";
 
 
 
@@ -20,6 +21,8 @@ export default function Home() {
       <main>
         <Navbar/>
         <h1 className={styles.title}>Scheduler for small business</h1>
+        <AboutUs/>
+        {/* <AppScheduler/> */}
         <MyCalendar/> 
       </main>
     </>

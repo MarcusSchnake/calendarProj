@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 const localizer = dayjsLocalizer(dayjs)
 
 export const MyCalendar = () => (
-  <div>
+  <div className="#calendar">
     <Calendar
       localizer={localizer}
       events={[{
