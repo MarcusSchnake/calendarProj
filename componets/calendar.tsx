@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 const localizer = dayjsLocalizer(dayjs)
 
 export const MyCalendar = () => (
-  <div className="#calendar">
+  <div className="calendar">
     <Calendar
       localizer={localizer}
       events={[{
@@ -14,6 +14,7 @@ export const MyCalendar = () => (
         allDay: true,
         start: new Date(2023, 2, 12),
         end: new Date(2023, 3, 13),
+        
       },
       {
         id: 1,

@@ -22,7 +22,7 @@ export default function Home() {
         <Navbar/>
         <h1 className={styles.title}>Scheduler for small business</h1>
         <AboutUs/>
-        {/* <AppScheduler/> */}
+        <AppScheduler mypenis />
         <MyCalendar/> 
       </main>
     </>
