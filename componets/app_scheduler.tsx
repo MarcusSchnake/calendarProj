@@ -1,14 +1,18 @@
 import React from "react";
+import { useState } from "react";
 
 export const AppScheduler = (props: any) => {
-  const AppointmentCreate = () => {
+    const [datepicker, setDatepicker] = useState('')
+    const [starttime, settStarttime] = useState('')
+    const [endtime, setEndtime] = useState('')
+  const AppointmentCreate = (props:any) => {
     console.log("bitch", props);
     return {
       id: 0,
-      title: "My precious",
+      title: "",
       allDay: false,
-      start: new Date(),
-      end: new Date(),
+      start: new Date(""),
+      end: new Date(""),
     };
   };
   return (
@@ -17,19 +21,37 @@ export const AppScheduler = (props: any) => {
         className="datepicker"
         type="date"
         id="start"
-        name="trip-start"
-        value="2018-07-22"
+        name="appointment -start"
+        value={datepicker}
+        onChange={(e) => setDatepicker(e.target.value)}
+        required
+      />
+      <input
+        className="starttime"
+        type="time"
+        id="start time"
+        name="appt"
+        value={starttime}
+        onChange={(e) => settStarttime(e.target.value)}
+        required
       />
       <input
         className="timepicker"
         type="time"
-        id="appt"
-        name="appt"
+        id="end time"
+        name="end time"
+        value={endtime}
+        onChange={(e) => setEndtime(e.target.value)}
         required
       />
-      <button className="pickersubmit" onClick={AppointmentCreate}>
+      <button 
+      className="pickersubmit" 
+      onClick={AppointmentCreate}>
         Schedule it
       </button>
+      <p>{datepicker}</p>
+      <p>{starttime}</p>
+      <p>{endtime}</p>
     </form>
   );
 };
