@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "../styles/about.module.css"
 
 export const AboutUs = () => {
   return (
-    <>
-      <h1 className="about">Hi my Name is..my name is</h1>
-      <p>
+    <div className={styles.about}>
+      <h1 className={styles.abouttitle}>Hi my Name is..my name is</h1>
+      <p className={styles.abouttext}>
         I am a small business owner that has been creating baked goods for
         years.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -26,8 +27,7 @@ fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore
 suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
 modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
 totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
-quasi aliquam eligendi, placeat qui corporis!
-      </p>
-    </>
+quasi aliquam eligendi, placeat qui corporis!</p>
+    </div>
   );
 };
