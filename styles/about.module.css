@@ -1,6 +1,8 @@
 .about {
     text-align: center;
-    background-color: gray;
+    background-color: #C8CAD1;
+    border: 2px solid black;
+     
 }
 
 .abouttitle {
@@ -10,5 +12,5 @@
 }
 
 .abouttext {
-    
+    font-size: 20px;
 }

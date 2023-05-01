@@ -6,9 +6,9 @@ export const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <a href="/">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#calendar">Calendar</a>
+      <a href="#abouttitle">About Us</a>
       <a href="#scheduler">Schedule Appointment</a>
+      <a href="#calendar">Calendar</a>
     </nav>
   );
 };

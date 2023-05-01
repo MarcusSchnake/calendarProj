@@ -1,15 +1,37 @@
 .scheduler {
+    border: solid 2px black;
+    display:inline block;
+    text-shadow: 1px 1px ;
+    background-color: lightblue;
+    
+    
 
 }
 
 .datepicker {
+    margin:3px;
+    padding:3px;
     
+
 }
 
 .starttime {
-
+    margin:3px;
+    padding:3px;
+   
 }
 
 .endtime {
-
+    margin:3px;
+    
 }
+
+.pickersubmit {
+    margin:3px;
+   
+}
+.pickersubmit:hover {
+    background-color:green;
+    color:white;
+}
+
